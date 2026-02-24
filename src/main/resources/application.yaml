@@ -1,8 +1,10 @@
 server:
   port: 8085
+
 spring:
   application:
     name: enterprise-hrms
+
   main:
     banner-mode: console
 
@@ -19,6 +21,18 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: 245pca021@gbu.ac.in
+    password: ocerkcahocyhklep
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
 logging:
   level:
